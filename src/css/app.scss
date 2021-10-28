@@ -1,1 +1,20 @@
 // app global css in SCSS form
+
+// Fonts del template
+@font-face {
+  font-family: $f-title;
+  src: url("/fonts/Maghony.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: $f-body;
+  src: url("/fonts/Montserrat.ttf") format("ttf");
+}
+
+.coast-title {
+  font-family: $f-title;
+}
+
+.coast-body {
+  font-family: $f-body;
+}

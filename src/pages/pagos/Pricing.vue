@@ -1,10 +1,10 @@
 <template>
-  <div class="q-ma-xl">
-    <h3 class="q-ma-none" style="color:#145DA0">Planes de suscripción</h3>
-    <p class="text-subtitle2 q-mt-md q-mb-none" style="color:#B1B7C6">
+  <div class="q-ma-xl cf-body cc-pri">
+    <h4 class="q-ma-none cf-title">Planes de suscripción</h4>
+    <p class="text-subtitle2 q-mt-md q-mb-none text-grey-5">
       Descripción de los planes
     </p>
-    <p class="text-body2 text-justify" style="color:#575B64">
+    <p class="text-body2 text-justify text-grey-9">
       Todo usuario puede acceder a los diferentes artículos de la tienda, como
       mejora a la experiencia del usuario, para poder comprar tus productos
       preferidos deberás realizar una cuenta inicial de Nivel Bronce, a medida
@@ -17,35 +17,33 @@
         <q-card class="my-card q-mt-md" style="max-width: 300px">
           <q-img v-bind:src="item.img">
             <div class="absolute-bottom">
-              <div class="text-h6">{{ item.title }}</div>
+              <div class="text-h6 text-weight-bold">{{ item.title }}</div>
               <div class="text-subtitle">{{ item.price }}</div>
             </div>
           </q-img>
           <q-card-section>
-            <div class="text-h6" style="color:#0C2D48">Beneficios</div>
+            <div class="text-h6 cc-sec text-weight-bold">Beneficios</div>
           </q-card-section>
           <q-card-section
             v-if="item.btn"
-            class="q-pt-none q-pb-none"
-            style="color:#2E8BC0"
+            class="q-pt-none q-pb-none cc-thi"
             >{{ item.description }}
           </q-card-section>
           <q-card-section
             v-if="!item.btn"
-            class="q-pt-none q-pb-xl"
-            style="color:#2E8BC0"
+            class="q-pt-none q-pb-xl cc-thi"
             >{{ item.description }}
           </q-card-section>
           <q-card-actions v-if="item.btn" vertical align="left" class="q-pt-xs">
-            <q-btn flat style="color:#145DA0">Suscribirse</q-btn>
+            <q-btn flat>Suscribirse</q-btn>
           </q-card-actions>
         </q-card>
       </q-list>
     </div>
-    <p class="text-subtitle2 q-mt-xl q-mb-none" style="color:#145DA0">
+    <p class="text-subtitle2 q-mt-xl q-mb-none">
       Venta de productos
     </p>
-    <p class="text-body2 text-justify" style="color:#B1B7C6">
+    <p class="text-body2 text-justify text-grey-6">
       Para ser acreedor a una cuenta como vendedor se deberás aceptar los
       <a href="">Términos y Condiciones de venta</a>, además de pasar por un
       chequeo de seguridad del usuario y el filtrado de los parámetros de

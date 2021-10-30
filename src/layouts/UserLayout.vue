@@ -35,7 +35,7 @@ const linksData = [
   {
     title: 'Planes',
     icon: 'star_outline',
-    link: '',
+    link: '/planes',
     classes: 'cc-pri cf-body text-weight-bolder'
   },
   {

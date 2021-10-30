@@ -1,8 +1,8 @@
 <template>
-  <div class="q-ma-xl">
-    <h3 class="q-ma-none q-mb-xl" style="color:#145DA0">
+  <div class="q-ma-xl cf-body cc-pri">
+    <h4 class="q-ma-none q-mb-xl cf-title">
       Detalle del producto
-    </h3>
+    </h4>
     <div class="row q-mt-md q-mb-md">
       <div class="col-xs-12 col-sm-6 col-md-5 q-mb-md q-pl-md q-pr-md ">
         <q-carousel
@@ -30,7 +30,7 @@
         </q-carousel>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-7">
-        <div class="row  q-mb-sm" style="color: #145DA0">
+        <div class="row  q-mb-sm cc-pri">
           <div class="col-xs-12 col-sm-6 col-md-11 text-h4 text-weight-bold">
             Vestido naranja flores escote v
           </div>
@@ -38,34 +38,32 @@
             <q-btn outline round color="primary" icon="favorite_border" />
           </div>
         </div>
-        <h5 class="q-ma-none  q-mb-md" style="color: #145DA0">
+        <h5 class="q-ma-none  q-mb-md">
           Andrei Panfiloiu beauty
         </h5>
         <div
           class="row  q-mb-md items-end text-weight-bold"
-          style="color: #145DA0"
         >
           <div class="col-xs-12 col-sm-6 col-md-3 text-h2">
             $560
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 text-h4">MXN</div>
         </div>
-        <h5 class="q-ma-none" style="color: #868990">
+        <h5 class="q-ma-none text-grey-6">
           En 12x $49.99 MXN
         </h5>
-        <h5 class="q-ma-none  q-mb-md" style="color: #868990">
+        <h5 class="q-ma-none text-grey-6 q-mb-md">
           IVA incluido
         </h5>
-        <h6 class="q-ma-none  text-weight-bold" style="color: #868990">
+        <h6 class="q-ma-none text-grey-6 text-weight-bold">
           Stock disponible: 10
         </h6>
-        <div class="q-ma-none  q-mb-md text-body1" style="color: #868990">
+        <div class="q-ma-none text-grey-6 q-mb-md text-body1">
           Puedes comprar hasta 5 unidades
         </div>
         <div class="row  q-mb-md">
           <div
             class="col-xs-12 col-sm-6 col-md-12 text-body1 q-mb-md"
-            style="color: #145DA0"
           >
             <q-icon size="31px" color="indigo" name="local_shipping" />
             Llega el lunes 18 por $99 MXN
@@ -106,19 +104,19 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-5 q-pl-md q-pr-md q-mb-md">
-        <h6 class="q-ma-none text-weight-bold" style="color: #868990">
+      <div class="col-xs-12 col-sm-6 col-md-5 q-pl-md q-pr-md q-mb-md text-grey-6">
+        <h6 class="q-ma-none text-weight-bold">
           Descripción del producto
         </h6>
-        <div class="text-body1 text-justify" style="color:#575B64">
+        <div class="text-body1 text-justify">
           Vestido naranja flores escote v.
         </div>
-        <div class="text-body1 text-justify" style="color:#575B64">
+        <div class="text-body1 text-justify">
          Tallas disponibles (CH, M, G, XG).
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-7 text-body1">
-        <div class="row  q-mb-sm justify-between" style="color: #145DA0">
+        <div class="row  q-mb-sm justify-between" >
           <div class="col-xs-12 col-sm-6 col-md-auto text-weight-bold">
             Calificación
           </div>
@@ -127,7 +125,7 @@
             Sumas 15 puntos
           </div>
         </div>
-        <div class="row justify-between" style="color: #145DA0">
+        <div class="row justify-between">
           <div class="col-xs-12 q-mb-md col-sm-6 col-md-auto text-weight-bold">
             <q-rating
               color="primary"

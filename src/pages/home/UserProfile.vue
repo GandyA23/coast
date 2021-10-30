@@ -1,6 +1,6 @@
 <template>
-  <div class="q-ma-xl">
-    <h3 class="q-ma-none q-mb-xl" style="color:#145DA0">Perfil de usuario</h3>
+  <div class="q-ma-xl cf-body cc-pri">
+    <h4 class="q-ma-none q-mb-xl cf-title">Perfil de usuario</h4>
     <div class="row q-mt-md q-mb-md">
       <div class="col-xs-12 col-sm-6 col-md-3 flex flex-center">
         <q-avatar size="12rem" class="q-mb-md">
@@ -10,10 +10,7 @@
         </q-avatar>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-9">
-        <h4
-          class="q-ma-none q-ml-mb q-mb-sm text-weight-bold"
-          style="color: #0C2D48"
-        >
+        <h4 class="q-ma-none q-ml-mb q-mb-sm text-weight-bold cc-sec">
           Sarah Vásquez
         </h4>
         <div>
@@ -22,7 +19,7 @@
               <q-icon size="15px" color="grey-5" name="calendar_today" />
               10/28/92
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 text-grey-5">
+            <div class="col-xs-12 col-sm-6 col-md-5 text-grey-5">
               <q-icon size="15px" color="grey-5" name="room" />
               6391 Elkin St. Celina, Delaware 10299
             </div>
@@ -32,21 +29,15 @@
             </div>
           </div>
         </div>
-        <h5
-          class="text-weight-bold q-ma-none q-mt-sm q-ml-mb"
-          style="color: #145DA0"
-        >
+        <h5 class="text-weight-bold q-ma-none q-mt-sm q-ml-mb">
           Cliente de nivel Platino
         </h5>
-        <p
-          class="text-subtitle2 q-ml-mb q-mt-sm q-mb-none"
-          style="color:#B1B7C6"
-        >
+        <p class="text-subtitle2 q-ml-mb q-mt-sm q-mb-none text-grey-5">
           Referencias del domicilio
         </p>
-        <p class="text-body2 text-justify q-ml-mb" style="color:#575B64">
+        <p class="text-body2 text-justify q-ml-mb text-grey-9">
           Elkin St. Celina, Delaware 10299. Rumbo al centro de la ciudad, cerca
-          de un quiosco, enfrente de un muro con una pintura colorida,. Casa
+          de un quiosco, enfrente de un muro con una pintura colorida. Casa
           blanca de dos pisos con un pequeño balcón con jardinera, puerta verde
           y un portón de rejillas con enredaderas. Número exterior 10299 con
           código postal 6391. Busón para correos visible en el portón.
@@ -56,9 +47,9 @@
     </div>
     <q-separator />
     <div>
-      <div class="row q-ml-mb q-mb-md">
+      <div class="row q-ml-mb q-mb-md text-grey-5 ">
         <div
-          class="col-xs-12 col-sm-6 col-md-3 text-grey-5 q-mt-md column content-center"
+          class="col-xs-12 col-sm-6 col-md-3 q-mt-md column content-center"
           v-for="(item, index) in items"
           :key="index"
         >
@@ -75,12 +66,23 @@
       </div>
     </div>
     <q-separator />
-    <h4 class="text-weight-bold" style="color: #0C2D48">
+    <div class="row justify-center q-mt-lg">
+      <div class="col-12 col-md-auto">
+        <q-btn
+          rounded
+          outline
+          color="indigo"
+          icon-right="edit"
+          label="Editar perfil"
+        />
+      </div>
+    </div>
+    <h4 class="text-weight-bold cc-sec q-mt-sm">
       Productos favoritos
     </h4>
     <div class="row justify-between">
       <q-list v-for="(item, index) in cards" :key="index">
-        <q-card class="my-card" style="width: 320px">
+        <q-card class="my-card q-mb-md" style="width: 300px">
           <q-img v-bind:src="item.img">
             <div class="absolute-bottom">
               <div class="text-h6">{{ item.title }}</div>
@@ -88,10 +90,15 @@
             </div>
           </q-img>
           <q-card-section>
-            <div class="text-h6 text-weight-bold" style="color:#0C2D48">Calificación dada</div>
+            <div class="text-h6 text-weight-bold cc-sec">Calificación dada</div>
           </q-card-section>
           <q-card-section class="q-pt-none" style="color:#2E8BC0">
-            <q-rating color="primary" :max="5" size="32px" :value="item.stars"></q-rating>
+            <q-rating
+              color="primary"
+              :max="5"
+              size="32px"
+              :value="item.stars"
+            ></q-rating>
           </q-card-section>
         </q-card>
       </q-list>
@@ -141,7 +148,7 @@ export default {
             "https://images.unsplash.com/photo-1613891737415-be7670d21c19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
         },
         {
-          title: "Conjunto Vintage rosa Talla M",
+          title: "Conjunto rosa Talla M",
           seller: "Vendedor:  Alex Miray",
           stars: 5,
           img:
@@ -149,6 +156,6 @@ export default {
         }
       ]
     };
-  },
+  }
 };
 </script>

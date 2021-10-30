@@ -1,1 +1,55 @@
 // app global css in SCSS form
+
+// Fonts
+@font-face {
+  font-family: $cf-title;
+  src: url("/fonts/Maghony.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: $cf-body;
+  src: url("/fonts/Montserrat.ttf") format("ttf");
+}
+
+.cf-title {
+  font-family: $cf-title;
+}
+
+.cf-body {
+  font-family: $cf-body, sans-serif;
+}
+
+// Backgrounds colors
+.bg-cc-pri {
+  background-color: $cc-pri;
+}
+
+.bg-cc-sec {
+  background-color: $cc-sec;
+}
+
+.bg-cc-thi {
+  background-color: $cc-thi;
+}
+
+.bg-cc-for {
+  background-color: $cc-for;
+}
+
+// Colors
+.cc-pri {
+  color: $cc-pri;
+}
+
+.cc-sec {
+  color: $cc-sec;
+}
+
+.cc-thi {
+  color: $cc-thi;
+}
+
+.cc-for {
+  color: $cc-for;
+}
+

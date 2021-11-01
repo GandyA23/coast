@@ -8,41 +8,49 @@
             src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80"
           />
         </q-avatar>
+        <q-btn
+          class="q-mb-md"
+          rounded
+          outline
+          color="indigo"
+          icon-right="edit"
+          label="Editar perfil"
+        />
       </div>
       <div class="col-xs-12 col-sm-6 col-md-9">
         <h4 class="q-ma-none q-ml-mb q-mb-sm text-weight-bold cc-sec">
           Sarah Vásquez
         </h4>
         <div>
-          <div class="row q-ml-mb">
+          <div class="row q-ml-mb text-body1">
             <div class="col-xs-12 col-sm-6 col-md-2 text-grey-5">
               <q-icon size="15px" color="grey-5" name="calendar_today" />
-              10/28/92
+              10/28/21
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-5 text-grey-5">
+            <div class="col-xs-12 col-sm-6 col-md-6 text-grey-5">
               <q-icon size="15px" color="grey-5" name="room" />
               6391 Elkin St. Celina, Delaware 10299
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-2 text-grey-5">
+            <div class="col-xs-12 col-sm-6 col-md-3 text-grey-5">
               <q-icon size="15px" color="grey-5" name="call" />
               (684) 555-0102
             </div>
           </div>
         </div>
-        <h5 class="text-weight-bold q-ma-none q-mt-sm q-ml-mb">
+        <h5 class="text-weight-bold q-ma-none q-mt-md q-ml-mb">
           Cliente de nivel Platino
         </h5>
-        <p class="text-subtitle2 q-ml-mb q-mt-sm q-mb-none text-grey-5">
+        <p class="text-body1 q-ml-mb q-mt-sm q-mb-none text-grey-5">
           Referencias del domicilio
         </p>
-        <p class="text-body2 text-justify q-ml-mb text-grey-9">
+        <div class="text-body1 text-justify q-ml-mb text-grey-9">
           Elkin St. Celina, Delaware 10299. Rumbo al centro de la ciudad, cerca
           de un quiosco, enfrente de un muro con una pintura colorida. Casa
           blanca de dos pisos con un pequeño balcón con jardinera, puerta verde
           y un portón de rejillas con enredaderas. Número exterior 10299 con
           código postal 6391. Busón para correos visible en el portón.
           Cuernavaca, Morelos.
-        </p>
+        </div>
       </div>
     </div>
     <q-separator />
@@ -66,20 +74,9 @@
       </div>
     </div>
     <q-separator />
-    <div class="row justify-center q-mt-lg">
-      <div class="col-12 col-md-auto">
-        <q-btn
-          rounded
-          outline
-          color="indigo"
-          icon-right="edit"
-          label="Editar perfil"
-        />
-      </div>
-    </div>
-    <h4 class="text-weight-bold cc-sec q-mt-sm">
+    <div class="text-h4 text-weight-bold cc-sec q-mt-md q-mb-md">
       Productos favoritos
-    </h4>
+    </div>
     <div class="row justify-between">
       <q-list v-for="(item, index) in cards" :key="index">
         <q-card class="my-card q-mb-md" style="width: 300px">

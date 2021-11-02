@@ -8,8 +8,8 @@
       Todo usuario puede acceder a los diferentes artículos de la tienda, como
       mejora a la experiencia del usuario, para poder comprar tus productos
       preferidos deberás realizar una cuenta inicial de Nivel Bronce, a medida
-      que acumules puntos en tus compras podrás pasar a nivel Oro. Habilita el
-      nivel Platino para acceder a descuentos especiales, envíos gratis y
+      que acumules puntos en tus compras podrás pasar a Nivel Oro. Habilita el
+      Nivel Platino para acceder a descuentos especiales, envíos gratis y
       tiempos de espera más cortos por una suscripción mensual.
     </p>
     <div class="row justify-between">
@@ -96,7 +96,6 @@ export default {
         }
       ]
     };
-  },
-  methods: {}
+  }
 };
 </script>

@@ -41,9 +41,7 @@
         <h5 class="q-ma-none  q-mb-md">
           Andrei Panfiloiu beauty
         </h5>
-        <div
-          class="row  q-mb-md items-end text-weight-bold"
-        >
+        <div class="row  q-mb-md items-end text-weight-bold">
           <div class="col-xs-12 col-sm-6 col-md-3 text-h2">
             $560
           </div>
@@ -62,14 +60,13 @@
           Puedes comprar hasta 5 unidades
         </div>
         <div class="row  q-mb-md">
-          <div
-            class="col-xs-12 col-sm-6 col-md-12 text-body1 q-mb-md"
-          >
+          <div class="col-xs-12 col-sm-6 col-md-12 text-body1 q-mb-md">
             <q-icon size="31px" color="indigo" name="local_shipping" />
             Llega el lunes 18 por $99 MXN
           </div>
         </div>
         <q-select
+          ref="size"
           class="q-mb-md"
           rounded
           dense
@@ -78,9 +75,11 @@
           outlined
           v-model="modelSize"
           :options="size"
+          :rules="[val => !!val || 'Talla requerida']"
           label="Selecciona una talla ..."
         />
         <q-select
+          ref="color"
           rounded
           dense
           color="indigo"
@@ -88,6 +87,7 @@
           outlined
           v-model="modelColor"
           :options="color"
+          :rules="[val => !!val || 'Color requerido']"
           label="Selecciona el color ..."
         />
         <div class="row justify-center q-mt-lg">
@@ -95,16 +95,20 @@
             <q-btn
               rounded
               outline
+              type="reset"
               color="indigo"
               icon-right="shopping_cart"
               label="Añadir al carrito"
+              @click="submit"
             />
           </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-5 q-pl-md q-pr-md q-mb-md text-grey-6">
+      <div
+        class="col-xs-12 col-sm-6 col-md-5 q-pl-md q-pr-md q-mb-md text-grey-6"
+      >
         <h6 class="q-ma-none text-weight-bold">
           Descripción del producto
         </h6>
@@ -112,11 +116,11 @@
           Vestido naranja flores escote v.
         </div>
         <div class="text-body1 text-justify">
-         Tallas disponibles (CH, M, G, XG).
+          Tallas disponibles (CH, M, G, XG).
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-7 text-body1">
-        <div class="row  q-mb-sm justify-between" >
+        <div class="row  q-mb-sm justify-between">
           <div class="col-xs-12 col-sm-6 col-md-auto text-weight-bold">
             Calificación
           </div>
@@ -160,6 +164,22 @@ export default {
       size: ["CH", "M", "G", "XG"],
       color: ["Naranja", "Rojo", "Amarillo"]
     };
+  },
+  methods: {
+    reset() {
+      this.$refs.size.resetValidation();
+      this.$refs.color.resetValidation();
+    },
+    submit() {
+      this.$refs.size.validate();
+      this.$refs.color.validate();
+
+      if(this.$refs.size.hasError || this.$refs.color.hasError){
+        //mensaje de error
+      }else{
+        //mensaje éxito
+      }
+    }
   }
 };
 </script>

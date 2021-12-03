@@ -1,6 +1,6 @@
-# COAST UX (coast)
+# APED MDP (aped)
 
-Proyecto final para la materia de Experiencias de Usuario, es un template en representación de una tienda en línea de ropa. 7A-UX
+Pantallas del proyecto APED para la materia de Metodologías para el Desarrollo de Proyectos. 7A-MDP
 
 ## Install the dependencies
 ```bash

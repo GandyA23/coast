@@ -22,3 +22,37 @@ $positive  : #21BA45;
 $negative  : #C10015;
 $info      : #31CCEC;
 $warning   : #F2C037;
+
+/*
+*********
+* FONTS *
+*********
+*/
+
+$f-maghony: "Maghony";
+$f-montserrat: "Montserrat";
+
+/*
+*******************
+* COLORES ESTATUS *
+*******************
+*/
+
+// Estatus Tablero
+$tab-analisis       : #E91F43;
+$tab-diseno         : #FBA846;
+$tab-programacion   : #FEE45A;
+$tab-test           : #2BB42E;
+
+// Estatus Historia de Usuario
+$hua-pendiente      : #E91F43;
+$hua-ejecucion      : #FEE45A;
+$hua-terminado      : #2BB42E;
+$hua-cancelado      : #DDE6F2;
+
+// Estatus proyectos
+$pro-planeado       : #FFFFFF;
+$pro-ejecucion      : #FEE45A;
+$pro-retrasado      : #E91F43;
+$pro-terminado      : #2BB42E;
+$pro-cancelado      : #DDE6F2;

@@ -1,8 +1,8 @@
 {
-  "name": "coast",
+  "name": "aped",
   "version": "0.0.1",
-  "description": "Proyecto final para la materia de Experiencias de Usuario, es un template en representación de una tienda en línea de ropa. 7A-UX",
-  "productName": "COAST UX",
+  "description": "Proyecto final para la materia de Metodologías para el Desarrollo de Proyectos. 7A-MDP",
+  "productName": "APED",
   "author": "GandyA23, vimillan, SebastianCarv, DafneJ y GustavoLopez04",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "axios": "^0.21.1",
+    "chart.js": "^3.6.1",
     "core-js": "^3.6.5",
     "quasar": "^1.0.0"
   },

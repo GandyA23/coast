@@ -12,7 +12,7 @@
           class="q-mb-md"
           rounded
           outline
-          color="indigo"
+          color="cc-pri"
           icon-right="edit"
           label="Editar perfil"
         />

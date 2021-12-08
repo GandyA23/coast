@@ -98,10 +98,10 @@
         />
         <div class="row q-mt-md q-mb-md">
           <div class="col-xs-12 col-sm-6 col-md-3 q-mb-md">
-            <q-btn rounded filled color="indigo" label="Guardar" />
+            <q-btn rounded filled color="cc-pri" label="Guardar" />
           </div>
           <div class="col-xs-12 col-sm-6 col-md-9 q-mb-md">
-            <q-btn rounded outline color="indigo" label="Limpiar formulario" />
+            <q-btn rounded outline color="cc-pri" label="Limpiar formulario" />
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-md-1"></div>
           <div class="col-xs-12 col-sm-6 col-md-6">
-            <q-btn rounded filled color="indigo" icon="upload_file" label="Subir imágenes " />
+            <q-btn rounded filled color="cc-pri" icon="upload_file" label="Subir imágenes " />
           </div>
         </div>
       </div>

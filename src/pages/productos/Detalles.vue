@@ -35,7 +35,7 @@
             Vestido naranja flores escote v
           </div>
           <div class="col-xs-12 col-sm-6 col-md-1 text-h4">
-            <q-btn outline round color="primary" icon="favorite_border" />
+            <q-btn outline round color="cc-pri" icon="favorite_border" />
           </div>
         </div>
         <h5 class="q-ma-none  q-mb-md">
@@ -60,8 +60,8 @@
           Puedes comprar hasta 5 unidades
         </div>
         <div class="row  q-mb-md">
-          <div class="col-xs-12 col-sm-6 col-md-12 text-body1 q-mb-md">
-            <q-icon size="31px" color="indigo" name="local_shipping" />
+          <div class="col-xs-12 col-sm-6 col-md-12 cc-pri text-body1 q-mb-md">
+            <q-icon size="31px" color="cc-pri" name="local_shipping" />
             Llega el lunes 18 por $99 MXN
           </div>
         </div>
@@ -96,7 +96,7 @@
               rounded
               outline
               type="reset"
-              color="indigo"
+              color="cc-pri"
               icon-right="shopping_cart"
               label="Añadir al carrito"
               @click="submit"
@@ -125,7 +125,7 @@
             Calificación
           </div>
           <div class="col-xs-12 col-sm-6 col-md-auto">
-            <q-icon color="primary" name="star_border" />
+            <q-icon color="cc-pri" name="star_border" />
             Sumas 15 puntos
           </div>
         </div>
@@ -142,7 +142,7 @@
             <q-btn
               rounded
               outline
-              color="indigo"
+              color="cc-pri"
               icon-right="chat"
               label="Chat del vendedor"
             />

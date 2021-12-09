@@ -1,5 +1,5 @@
 <template>
-  <div class="row content">
+  <div class="row items-center">
     <div class="q-pa-md col-md-6 logo">
       <q-img src="https://i.ibb.co/cccCYsh/logo.png" />
     </div>

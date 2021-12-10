@@ -6,7 +6,7 @@
         <q-btn v-if="showIconDrawer" dense flat round icon="menu" @click="openOrCloseDrawer" />
 
         <q-toolbar-title>
-          <p class="q-mt-md q-ml-md cf-title">COAST</p>
+          <p style="font-size: 1.1rem" class="q-mt-md cf-title">COAST</p>
         </q-toolbar-title>
 
         <div v-if="showIconsLogged">
@@ -23,7 +23,7 @@
         <q-btn v-if="showIconDrawer" dense flat round icon="menu" @click="openOrCloseDrawer" />
 
         <q-toolbar-title>
-          <p class="q-mt-md q-ml-md cf-title">ADMIN COAST</p>
+          <p style="font-size: 1.1rem" class="q-mt-md cf-title">ADMIN COAST</p>
         </q-toolbar-title>
 
         <div v-if="showIconsLogged">

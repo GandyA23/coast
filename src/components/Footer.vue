@@ -1,7 +1,7 @@
 <template>
   <q-footer elevated :class="`${(showAdmin ? 'bg-cc-sec' : 'bg-cc-pri')} text-white`">
       <q-toolbar>
-        <q-toolbar-title style="font-size: 1.1rem;" class="cf-body text-center text-weight-bolder">
+        <q-toolbar-title style="font-size: 1rem;" class="cf-body text-center text-weight-bolder">
           &copy;COAST {{today.getFullYear()}}. Todos los derechos reservados
         </q-toolbar-title>
       </q-toolbar>

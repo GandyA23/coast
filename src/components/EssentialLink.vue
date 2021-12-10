@@ -5,13 +5,14 @@
       v-if="sublevel.length"
       :content-inset-level="1"
       :to="link"
+      :expand-icon-class="expandIconClass"
     >
-      <template :class="classes" v-slot:header>
+      <template v-slot:header>
         <q-item-section avatar>
-          <q-icon class="cc-pri" size="2rem" :name="icon" />
+          <q-icon :class="icon.classes" size="2rem" :name="icon.name" />
         </q-item-section>
 
-        <q-item-section class="cc-pri cf-body text-weight-bolder cfs-item">
+        <q-item-section :class="`${classes} cfs-item`">
           {{ title }}
         </q-item-section>
 
@@ -28,7 +29,7 @@
     </q-expansion-item>
 
     <q-item
-      :class="'cc-pri cf-body cfs-item ' + (isSublevel ? 'text-body2' : 'text-weight-bolder')"
+      :class="`${classes} cfs-item`"
       clickable
       v-else
       :to="link"
@@ -37,7 +38,7 @@
         v-if="icon"
         avatar
       >
-        <q-icon class="cc-pri" size="2rem" :name="icon" />
+        <q-icon :class="icon.classes" size="2rem" :name="icon.name" />
       </q-item-section>
 
       <q-item-section>
@@ -70,8 +71,8 @@ export default {
     },
 
     icon: {
-      type: String,
-      default: ''
+      type: Object,
+      default: () => {}
     },
 
     sublevel: {
@@ -84,6 +85,11 @@ export default {
       default: ''
     },
 
+    expandIconClass: {
+      type: String,
+      default: ''
+    },
+
     isSublevel: {
       type: Boolean,
       default: false
@@ -92,9 +98,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="sass">
   // Coast font size item in drawer
-  .cfs-item {
-    font-size: 18px;
-  }
+  .cfs-item
+    font-size: 18px
 </style>

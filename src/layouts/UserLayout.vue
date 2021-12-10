@@ -28,59 +28,83 @@ import Drawer from 'components/Drawer.vue'
 const linksData = [
   {
     title: 'Inicio',
-    icon: 'o_home',
+    icon: {
+      name: 'o_home',
+      classes: 'cc-pri'
+    },
     link: '',
     classes: 'cc-pri cf-body text-weight-bolder'
   },
   {
     title: 'Planes',
-    icon: 'star_outline',
+    icon: {
+      name: 'star_outline',
+      classes: 'cc-pri'
+    },
     link: '',
     classes: 'cc-pri cf-body text-weight-bolder'
   },
   {
     title: 'Caballeros',
-    icon: 'male',
+    icon: {
+      name: 'male',
+      classes: 'cc-pri'
+    },
     link: '',
+    expandIconClass: 'cc-pri',
+    classes: 'cc-pri cf-body text-weight-bolder',
     sublevel: [
       {
         title: 'Pantalones / Short',
-        link: ''
+        link: '',
+        classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Camisas',
-        link: ''
+        link: '',
+        classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Sudaderas / Hoddies',
-        link: ''
+        link: '',
+        classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Accesorios',
-        link: ''
+        link: '',
+        classes: 'cc-pri cf-body text-body2'
       }
     ]
   },
   {
     title: 'Damas',
-    icon: 'female',
+    icon: {
+      name: 'female',
+      classes: 'cc-pri'
+    },
     link: '',
+    expandIconClass: 'cc-pri',
+    classes: 'cc-pri cf-body text-weight-bolder',
     sublevel: [
       {
         title: 'Pantalones / Short',
-        link: ''
+        link: '',
+        classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Camisas',
-        link: ''
+        link: '',
+        classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Sudaderas / Hoddies',
-        link: ''
+        link: '',
+        classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Accesorios',
-        link: ''
+        link: '',
+        classes: 'cc-pri cf-body text-body2'
       }
     ]
   }

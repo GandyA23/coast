@@ -113,7 +113,7 @@
           v-model="slide"
           thumbnails
           infinite
-          style="max-width:450px"
+          
           height="550px"
           class="rounded-borders shadow-2"
         >
@@ -121,27 +121,32 @@
           <q-carousel-slide :name="2" img-src="~assets/photos.png" />
           <q-carousel-slide :name="3" img-src="~assets/photos.png" />
         </q-carousel>
-        <div class="row q-mt-md q-mb-md">
-          <div class="col-xs-12 col-sm-6 col-md-5 q-mb-md">
-            <q-file
-              v-model="files"
-              label="Selecciona las imágenes"
-              outlined
+        <div class="row q-mt-md q-mb-md justify-between">
+          <q-file
+            class="column col-xs-12 col-sm-6 col-md-5 q-mb-md"
+            v-model="files"
+            label="Selecciona las imágenes"
+            outlined
+            rounded
+            dense
+            color="indigo"
+            use-chips
+            multiple
+            style="max-width: 300px"
+          >
+            <template v-slot:prepend>
+              <q-icon color="indigo" name="attach_file" />
+            </template>
+          </q-file>
+          
+          <div class="column col-xs-12 col-sm-6 col-md-6">
+            <q-btn
               rounded
-              dense
-              color="indigo"
-              use-chips
-              multiple
-              style="max-width: 300px"
-            >
-              <template v-slot:prepend>
-                <q-icon color="indigo" name="attach_file" />
-              </template>
-            </q-file>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-1"></div>
-          <div class="col-xs-12 col-sm-6 col-md-6">
-            <q-btn rounded filled color="cc-pri" icon="upload_file" label="Subir imágenes " />
+              filled
+              color="cc-pri"
+              icon="upload_file"
+              label="Subir imágenes "
+            />
           </div>
         </div>
       </div>

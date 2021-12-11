@@ -1,7 +1,7 @@
 <template>
-  <div class="row items-center">
+  <div class="row">
     <div class="q-pa-md col-md-6 logo">
-      <q-img src="https://i.ibb.co/cccCYsh/logo.png" />
+      <q-img src="https://i.ibb.co/cccCYsh/logo.png" class="o" />
     </div>
     <div class="q-pa-md col-6 register-user cf-body">
       <h5 class="title text-weight-bold cc-pri cf-body">Regístrate</h5>

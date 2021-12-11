@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="text-weight-bold cf-title cc-pri title-product">
+    <h4 class="text-weight cf-title cc-pri title-product">
       {{ title }}
     </h4>
     <div class="col-sm-6 cf-body">

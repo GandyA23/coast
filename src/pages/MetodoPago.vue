@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="q-pa-md col-md-12 cf-body register">
-      <h4 class="text-weight-bold cf-title cc-pri">
+      <h4 class="text-weight cf-title cc-pri">
         pago
       </h4>
       <q-input

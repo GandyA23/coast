@@ -45,19 +45,19 @@ const linksData = [
     sublevel: [
       {
         title: 'Pantalones / Short',
-        link: ''
+        link: '/caballeros/pantalones-shorts'
       },
       {
         title: 'Camisas',
-        link: ''
+        link: '/caballeros/camisas'
       },
       {
         title: 'Sudaderas / Hoddies',
-        link: ''
+        link: '/caballeros/sudaderas-hoodies'
       },
       {
         title: 'Accesorios',
-        link: ''
+        link: '/caballeros/accesorios'
       }
     ]
   },
@@ -68,19 +68,19 @@ const linksData = [
     sublevel: [
       {
         title: 'Pantalones / Short',
-        link: ''
+        link: '/damas/pantalones-shorts'
       },
       {
         title: 'Camisas',
-        link: ''
+        link: '/damas/camisas'
       },
       {
         title: 'Sudaderas / Hoddies',
-        link: ''
+        link: '/damas/sudaderas-hoodies'
       },
       {
         title: 'Accesorios',
-        link: ''
+        link: '/damas/accesorios'
       }
     ]
   }

@@ -9,7 +9,7 @@
 
       <div v-if="showIconsLogged">
         <q-btn class="bg-cc-sec q-mr-sm" size="12px" outline round color="white" icon="o_person"  to="/perfil"/>
-        <q-btn class="bg-cc-sec q-mr-sm" size="12px" outline round color="white" icon="o_shopping_cart" />
+        <q-btn class="bg-cc-sec q-mr-sm" size="12px" outline round color="white" icon="o_shopping_cart" to="/carrito" />
         <q-btn class="bg-cc-sec q-mr-lg" size="12px" outline round color="white" icon="o_power_settings_new" />
       </div>
     </q-toolbar>

@@ -41,7 +41,7 @@ const linksData = [
       name: 'star_outline',
       classes: 'cc-pri'
     },
-    link: '',
+    link: '/planes',
     classes: 'cc-pri cf-body text-weight-bolder'
   },
   {
@@ -56,22 +56,22 @@ const linksData = [
     sublevel: [
       {
         title: 'Pantalones / Short',
-        link: '',
+        link: '/caballeros/pantalones-shorts',
         classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Camisas',
-        link: '',
+        link: '/caballeros/camisas',
         classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Sudaderas / Hoddies',
-        link: '',
+        link: '/caballeros/sudaderas-hoodies',
         classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Accesorios',
-        link: '',
+        link: '/caballeros/accesorios',
         classes: 'cc-pri cf-body text-body2'
       }
     ]
@@ -88,22 +88,22 @@ const linksData = [
     sublevel: [
       {
         title: 'Pantalones / Short',
-        link: '',
+        link: '/caballeros/pantalones-shorts',
         classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Camisas',
-        link: '',
+        link: '/caballeros/camisas',
         classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Sudaderas / Hoddies',
-        link: '',
+        link: '/caballeros/sudaderas-hoodies',
         classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Accesorios',
-        link: '',
+        link: '/caballeros/accesorios',
         classes: 'cc-pri cf-body text-body2'
       }
     ]

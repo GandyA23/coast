@@ -112,6 +112,21 @@ const routes = [
     ]
   },
 
+  {
+    path: '/formulario',
+    component: () => import('layouts/UserLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/form/Form.vue')}
+    ]
+  },
+
+  {
+    path: '/registro-productos',
+    component: () => import('layouts/UserLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/productos/RegisterProducts.vue')}
+    ]
+  },
 
   // Always leave this as last one,
   // but you can also remove it

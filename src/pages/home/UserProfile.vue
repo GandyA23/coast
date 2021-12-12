@@ -3,19 +3,21 @@
     <h4 class="q-ma-none q-mb-xl cf-title">Perfil de usuario</h4>
     <div class="row q-mt-md q-mb-md">
       <div class="col-xs-12 col-sm-6 col-md-3 flex flex-center">
-        <q-avatar size="12rem" class="q-mb-md">
-          <img
-            src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80"
+        <div class="column">
+          <q-avatar size="12rem" class="q-mb-md ">
+            <img
+              src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80"
+            />
+          </q-avatar>
+          <q-btn
+            class="q-mb-md"
+            rounded
+            outline
+            color="cc-pri"
+            icon-right="edit"
+            label="Editar perfil"
           />
-        </q-avatar>
-        <q-btn
-          class="q-mb-md"
-          rounded
-          outline
-          color="indigo"
-          icon-right="edit"
-          label="Editar perfil"
-        />
+        </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-9">
         <h4 class="q-ma-none q-ml-mb q-mb-sm text-weight-bold cc-sec">
@@ -89,7 +91,7 @@
           <q-card-section>
             <div class="text-h6 text-weight-bold cc-sec">Calificación dada</div>
           </q-card-section>
-          <q-card-section class="q-pt-none" style="color:#2E8BC0">
+          <q-card-section class="q-pt-none">
             <q-rating
               color="primary"
               :max="5"

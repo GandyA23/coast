@@ -55,7 +55,7 @@
     <q-btn
       rounded
       outline
-      color="primary"
+      color="cc-pri"
       icon-right="paid"
       label="Ser vendedor"
     />

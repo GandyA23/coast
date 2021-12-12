@@ -1,21 +1,26 @@
 <template>
-  <div class="row" style="margin-bottom: 20px">
-    <div class="q-pa-sm col-sm-8 logo">
-      <q-img src="https://i.ibb.co/cccCYsh/logo.png"> </q-img>
+  <div class="row">
+    <div class="q-pa-md col-md-6 logo">
+      <q-img src="https://i.ibb.co/cccCYsh/logo.png" class="o" />
     </div>
-    <div class="q-pa-md col-6 register">
-      <h5 class="title">Registrate</h5>
+    <div class="q-pa-md col-6 register-user cf-body">
+      <h5 class="title text-weight-bold cc-pri cf-body">Regístrate</h5>
       <q-input
         rounded
         outlined
         v-model="name"
-        bg-color="white"
         item-aligned
         dense
+        hide-bottom-space
+        :rules="[
+          (val) => !!val || 'Este campo es requerido',
+          (val) => val.length <= 20 || 'Por favor máximo 20 caracteres',
+          (val) => val.length >= 5 || 'Por favor mínimo 5 caracteres',
+        ]"
       >
-        <p class="title-input">Nombre(s):</p>
+        <p class="title-input cc-pri">Nombre(s):</p>
         <template v-slot:prepend>
-          <q-icon name="assignment_ind" class="color-icon" />
+          <q-icon name="assignment_ind" class="cc-pri" />
         </template>
       </q-input>
 
@@ -23,14 +28,20 @@
         rounded
         outlined
         v-model="lastName"
-        style="padding-top: 20px"
-        bg-color="white"
+        class="register-input"
+        hide-bottom-space
+        :rules="[
+          (val) => !!val || 'Este campo es requerido',
+          (val) => val.length <= 20 || 'Por favor máximo 20 caracteres',
+          (val) => val.length >= 5 || 'Por favor mínimo 5 caracteres',
+        ]"
         item-aligned
         dense
       >
-        <p class="title-input">Apellido(s):</p>
+        <p class="title-input cc-pri">Apellido(s):</p>
+
         <template v-slot:prepend>
-          <q-icon name="assignment_ind" class="color-icon" />
+          <q-icon name="assignment_ind" class="cc-pri" />
         </template>
       </q-input>
 
@@ -38,14 +49,16 @@
         rounded
         outlined
         v-model="email"
-        style="padding-top: 20px"
-        bg-color="white"
+        type="email"
+        class="register-input"
+        :rules="[(val) => !!val || 'Este campo es requerido', isValidEmail]"
         item-aligned
+        hide-bottom-space
         dense
       >
-        <p class="title-input">Correo electronico:</p>
+        <p class="title-input cc-pri">Correo electrónico:</p>
         <template v-slot:prepend>
-          <q-icon name="email" class="color-icon" />
+          <q-icon name="email" class="cc-pri" />
         </template>
       </q-input>
 
@@ -53,21 +66,26 @@
         rounded
         outlined
         v-model="password"
-        style="padding-top: 20px"
-        bg-color="white"
+        hide-bottom-space
+        class="register-input"
         :type="pass1 ? 'password' : 'text'"
+        :rules="[
+          (val) => !!val || 'Este campo es requerido',
+          (val) => val.length <= 20 || 'Por favor máximo 20 caracteres',
+          (val) => val.length >= 10 || 'Por favor mínimo 10 caracteres',
+        ]"
         item-aligned
         dense
       >
-        <p class="title-input">Contraseña:</p>
+        <p class="title-input cc-pri">Contraseña:</p>
         <template v-slot:prepend>
-          <q-icon name="lock" class="color-icon" />
+          <q-icon name="lock" class="cc-pri" />
         </template>
 
         <template v-slot:append>
           <q-icon
             :name="pass1 ? 'visibility_off' : 'visibility'"
-            class="cursor-pointer color-icon"
+            class="cursor-pointer cc-pri"
             @click="pass1 = !pass1"
           />
         </template>
@@ -76,32 +94,38 @@
       <q-input
         rounded
         outlined
+        hide-bottom-space
         v-model="passwordConfirm"
         :type="pass2 ? 'password' : 'text'"
-        style="padding-top: 20px"
-        bg-color="white"
+        class="register-input"
+        :rules="[
+          (val) => !!val || 'Este campo es requerido',
+
+          (val) =>
+            password === passwordConfirm || 'Las contraseñas deben ser iguales',
+        ]"
         item-aligned
         dense
       >
-        <p class="title-input">Confirmar contraseña:</p>
+        <p class="title-input cc-pri">Confirmar contraseña:</p>
         <template v-slot:prepend>
-          <q-icon name="lock" class="color-icon" />
+          <q-icon name="lock" class="cc-pri" />
         </template>
 
         <template v-slot:append>
           <q-icon
             :name="pass2 ? 'visibility_off' : 'visibility'"
-            class="cursor-pointer color-icon"
+            class="cursor-pointer cc-pri"
             @click="pass2 = !pass2"
           />
         </template>
       </q-input>
 
-      <div class="btn-register">
-        <q-btn rounded color="white" text-color="#0C2D48" label="Registrarse" />
+      <div class="btn-register-user">
+        <q-btn rounded color="cc-pri" text-color="white" label="Registrarse" />
       </div>
 
-      <div class="login">
+      <div class="login cc-pri cf-body">
         <div class="text-subtitle2">¿Ya tienes cuenta?</div>
         <q-item class="text-subtitle2 sesion" manual-focus dense to="#"
           >Iniciar sesión</q-item
@@ -122,62 +146,19 @@ export default {
       password: "",
       passwordConfirm: "",
       pass1: false,
-      pass2: false
+      pass2: false,
     };
+  },
+
+  methods: {
+    isValidEmail(val) {
+      const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      return emailPattern.test(val) || "Email no valido";
+    },
   },
 };
 </script>
 
 <style lang="sass" scoped>
-
-.title-input
-  position: absolute
-  color: white
-  top: -20px
-  left: -30px
-  font-family: $cf-body
-
-
-.color-icon
-  color: #0C2D48
-
-.title
-  display: flex
-  justify-content: center
-  color: white
-  margin: 0
-  margin-bottom: 15px
-  font-family: $cf-body
-
-.btn-register
-  display: flex
-  justify-content: center
-  color: white
-  margin-top: 20px
-  color: #0C2D48
-
-.register
-  background-color: $cc-sec
-  width: 100%
-  max-width: 400px
-  border-radius: 30px
-  margin: auto
-  margin-top: 20px
-
-.logo
-  width: 100%
-  margin: auto
-  max-width: 450px
-
-
-.login
-  display: flex
-  justify-content: center
-  margin-top : 8px
-  color: white
-  font-family: $cf-body
-  .sesion
-    color: white
-    margin-top: -2px
-    text-decoration-line: underline
+@import "../css/style.gl.scss"
 </style>

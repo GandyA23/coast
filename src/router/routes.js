@@ -62,6 +62,22 @@ const routes = [
   },
 
   {
+    path: '/login',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Login.vue') }
+    ]
+  },
+
+  {
+    path: '/lista-productos',
+    component: () => import('layouts/UserLayout.vue'),
+    children: [
+      { path: '', component: () => import('src/pages/ListaProductosAdmin.vue') }
+    ]
+  },
+
+  {
     path: '/caballeros',
     component: () => import('layouts/UserLayout.vue'),
     children: [

@@ -1,0 +1,171 @@
+// Estilos para la vista de MetodoPago
+.title-input {
+  position: absolute;
+  top: -20px;
+  left: -30px;
+}
+
+.date-cvv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn-register {
+  color: white;
+  margin-top: 20px;
+}
+
+.register {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: -30px;
+}
+
+.img {
+  width: 100%;
+  margin: auto;
+  max-width: 450px;
+}
+
+.img-visa {
+  max-width: 100px;
+  top: -10px;
+  margin-left: 350px;
+}
+
+.last-name {
+  margin-top: 30px;
+}
+
+.credit-card {
+  margin-top: -20px;
+}
+
+.cvv-input {
+  width: 30%;
+}
+
+.date-input {
+  width: 65%;
+}
+
+@media only screen and (max-width: 500px) {
+  .img-visa {
+    margin-left: 65%;
+  }
+}
+
+// Estilos para la vista de Registro
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.btn-register-user {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.register-user {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 30px;
+  border: 4px solid #145da0;
+  margin: 15px auto 30px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 420px;
+  margin: 0px auto 1px;
+}
+
+.a{
+  height: 100%;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.sesion {
+  margin-top: -2px;
+  text-decoration-line: underline;
+}
+
+.register-input {
+  margin-top: 10px;
+}
+
+// Estilos para la vista de ListaProductos
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  height: 440px;
+  margin-top: 20px;
+}
+
+.contain{
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-cart {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.title-product {
+  margin: auto;
+  margin-left: 2vw;
+  margin-top: 40px;
+}
+
+.img-product {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    margin-left: 0px;
+  }
+  .title-product {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+}
+
+// login
+
+.login-user {
+  width: 100%;
+  max-width: 400px;
+  height: 340px;
+  border-radius: 30px;
+  margin: 15px auto 30px;
+  background-color: #0C2D48;
+  color: white;
+}
+
+.input-login{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.btn-login{
+  width: 150px;
+  color: #0C2D48;
+}

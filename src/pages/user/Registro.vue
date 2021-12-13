@@ -160,5 +160,5 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import "../css/style.gl.scss"
+@import "src/css/style.gl.scss"
 </style>

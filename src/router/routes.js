@@ -13,6 +13,7 @@ const routes = [
     path: '/admin',
     component: () => import('layouts/MainLayout.vue'),
     children: [
+      { path: 'chart', component: () => import('pages/admin/Chart.vue') },
       { path: '', component: () => import('pages/Index.vue') }
     ]
   },

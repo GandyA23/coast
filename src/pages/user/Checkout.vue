@@ -10,7 +10,7 @@
                   outlined
                   v-model="target"
                   mask="#### #### #### ####"
-                  class="q-mt-lg col-xs-12 col-sm-6 col-md-5"
+                  class="q-mt-lg col-xs-12 col-sm-5 col-md-5"
                   :rules="[
                     (val) => !!val || 'Este campo es requerido',
                     (val) => val.length > 18 || 'Por favor, ingresa los 16 dígitos'
@@ -31,7 +31,7 @@
                   mask="date"
                   :rules="['date']"
                   dense
-                  class="q-mt-lg offset-sm-1 offset-md-1 col-xs-12 col-sm-6 col-md-3 cursor-pointer"
+                  class="q-mt-lg offset-sm-1 offset-md-1 col-xs-12 col-sm-3 col-md-3 cursor-pointer"
                 >
                   <p class="q-ml-lg title-input text-grey-6">Fecha</p>
                   <q-popup-proxy ref="qDateProxy" transition-show="scale" transition-hide="scale">
@@ -49,7 +49,7 @@
                   outlined
                   v-model="cvv"
                   mask="###"
-                  class="q-mt-lg offset-sm-1 offset-md-1 col-xs-12 col-sm-6 col-md-2"
+                  class="q-mt-lg offset-sm-1 offset-md-1 col-xs-12 col-sm-2 col-md-2"
                   :rules="[
                     (val) => !!val || 'Este campo es requerido',
                     (val) => val.length > 2 || 'Por favor, ingresa los 3 dígitos'

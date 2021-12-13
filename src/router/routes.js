@@ -3,10 +3,17 @@ const routes = [
   // User Routes
   {
     path: '/',
-    component: () => import('layouts/UserLayout.vue'),
+    component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/user/Login.vue') },
-      { path: 'registro', component: () => import('pages/user/Registro.vue') },
+      { path: 'registro', component: () => import('pages/user/Registro.vue') }
+    ]
+  },
+  // User Routes
+  {
+    path: '/',
+    component: () => import('layouts/UserLayout.vue'),
+    children: [
       { path: 'landing', component: () => import('pages/user/Landing.vue') },
       { path: 'checkout', component: () => import('pages/user/Checkout.vue') },
       { path: 'inbox-email', component: () => import('pages/user/InboxEmail.vue') },
@@ -42,7 +49,7 @@ const routes = [
   // Admin Routes
   {
     path: '/admin',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('src/layouts/AdminLayout.vue'),
     children: [
       { path: 'chart', component: () => import('pages/admin/Chart.vue') },
       { path: 'stepper', component: () => import('pages/admin/Stepper.vue') },

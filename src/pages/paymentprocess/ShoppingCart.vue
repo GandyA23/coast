@@ -1,7 +1,6 @@
 <template>
     <div class="q-ma-xl cf-body cc-pri">
         <h4 class="q-ma-none q-mb-lg cf-title">Shopping Cart</h4>
-        <!-- <q-btn class=" q-mb-lg" rounded outline type="reset" color="indigo" icon-right="history" label="Historial de compra" /> -->
         <div class="text-body1">
             Envío gratis a partir de $899
         </div>
@@ -88,15 +87,6 @@
         </div>
     </div>
 </template>
-
-
-<style scoped>
-/* div {
-    border-color: gray;
-    border-width: 1px;
-    border-style: solid;
-} */
-</style>
 
 <style lang="sass" scoped>
 

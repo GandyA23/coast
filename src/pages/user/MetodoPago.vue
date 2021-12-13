@@ -176,12 +176,22 @@ export default {
       }
     },
     continuar() {
+      if(this.name.length < 5 || this.lastName.length < 5
+      || this.creditCard.length < 19 || this.cvv.length < 3){
+          this.$q.notify({
+        message: "Todos los campos son obligatorios.",
+        icon: "error",
+        type: "negative"
+      });
+      }else{
       this.$q.notify({
         message: "Tarjeta guardada correctamente.",
         icon: "check_circle",
         type: "positive"
       });
       this.$router.push('/checkout')
+      }
+
     }
   },
 };

@@ -88,22 +88,22 @@ const linksData = [
     sublevel: [
       {
         title: 'Pantalones / Short',
-        link: '/caballeros/pantalones-shorts',
+        link: '/damas/pantalones-shorts',
         classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Camisas',
-        link: '/caballeros/camisas',
+        link: '/damas/camisas',
         classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Sudaderas / Hoddies',
-        link: '/caballeros/sudaderas-hoodies',
+        link: '/damas/sudaderas-hoodies',
         classes: 'cc-pri cf-body text-body2'
       },
       {
         title: 'Accesorios',
-        link: '/caballeros/accesorios',
+        link: '/damas/accesorios',
         classes: 'cc-pri cf-body text-body2'
       }
     ]

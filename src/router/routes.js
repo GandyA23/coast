@@ -23,26 +23,28 @@ const routes = [
       { path: 'perfil', component: () => import('pages/user/UserProfile.vue') },
       { path: 'detalles', component: () => import('pages/user/Detalles.vue') },
       { path: 'metodo-de-pago', component: () => import('pages/user/MetodoPago.vue') },
-      {
-        path: '/caballeros',
-        component: () => import('layouts/UserLayout.vue'),
-        children: [
-          { path: 'accesorios', component: () => import('pages/user/productos-caballero/Accesorios.vue') },
-          { path: 'pantalones-shorts', component: () => import('pages/user/productos-caballero/Pantalones.vue') },
-          { path: 'sudaderas-hoodies', component: () => import('pages/user/productos-caballero/Sudaderas.vue') },
-          { path: 'camisas', component: () => import('pages/user/productos-caballero/Camisas.vue') }
-        ]
-      },
-      {
-        path: '/damas',
-        component: () => import('layouts/UserLayout.vue'),
-        children: [
-          { path: 'accesorios', component: () => import('pages/user/productos-dama/Accesorios.vue') },
-          { path: 'pantalones-shorts', component: () => import('pages/user/productos-dama/Pantalones.vue') },
-          { path: 'sudaderas-hoodies', component: () => import('pages/user/productos-dama/Sudaderas.vue') },
-          { path: 'camisas', component: () => import('pages/user/productos-dama/Camisas.vue') }
-        ]
-      }
+    ]
+
+  },
+
+  {
+    path: '/caballeros',
+    component: () => import('layouts/UserLayout.vue'),
+    children: [
+      { path: 'accesorios', component: () => import('pages/user/productos-caballero/Accesorios.vue') },
+      { path: 'pantalones-shorts', component: () => import('pages/user/productos-caballero/Pantalones.vue') },
+      { path: 'sudaderas-hoodies', component: () => import('pages/user/productos-caballero/Sudaderas.vue') },
+      { path: 'camisas', component: () => import('pages/user/productos-caballero/Camisas.vue') }
+    ]
+  },
+  {
+    path: '/damas',
+    component: () => import('layouts/UserLayout.vue'),
+    children: [
+      { path: 'accesorios', component: () => import('pages/user/productos-dama/Accesorios.vue') },
+      { path: 'pantalones-shorts', component: () => import('pages/user/productos-dama/Pantalones.vue') },
+      { path: 'sudaderas-hoodies', component: () => import('pages/user/productos-dama/Sudaderas.vue') },
+      { path: 'camisas', component: () => import('pages/user/productos-dama/Camisas.vue') }
     ]
   },
 
@@ -54,8 +56,8 @@ const routes = [
       { path: 'chart', component: () => import('pages/admin/Chart.vue') },
       { path: 'stepper', component: () => import('pages/admin/Stepper.vue') },
       { path: 'lista-productos', component: () => import('pages/admin/ListaProductos.vue') },
-      { path: 'formulario', component: () => import('pages/admin/Form.vue')},
-      { path: 'registro-productos', component: () => import('pages/admin/RegisterProducts.vue')}
+      { path: 'formulario', component: () => import('pages/admin/Form.vue') },
+      { path: 'registro-productos', component: () => import('pages/admin/RegisterProducts.vue') }
     ]
   },
 

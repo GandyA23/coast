@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md cf-body q-mb-4">
-    <h4 class="text-weight-bold cf-title cc-pri title-product">Lista de productos</h4>
+    <h4 class="text-weight cf-title cc-pri title-product">Lista de productos</h4>
     <q-table
       class="q-mt-md"
       :data="rows"

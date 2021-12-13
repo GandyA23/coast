@@ -234,7 +234,7 @@
 
 <script>
 export default {
-    name: "ShoppingCart",
+    name: "Checkout",
     data() {
         return {
           target: '',

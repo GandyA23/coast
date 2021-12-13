@@ -6,6 +6,7 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/user/Landing.vue') },
       { path: 'checkout', component: () => import('pages/user/Checkout.vue') },
+      { path: 'inbox-email', component: () => import('pages/user/InboxEmail.vue') },
     ]
   },
   {

@@ -145,19 +145,26 @@
               color="cc-pri"
               icon-right="chat"
               label="Chat del vendedor"
+              @click="seamless=!seamless"
             />
           </div>
         </div>
       </div>
     </div>
+    <ChatC :seamless="seamless"/>
   </div>
 </template>
 <script>
+import ChatC from "src/components/chat/ChatC.vue";
 export default {
   name: "Detalles",
+  components: {
+    ChatC
+  },
   data() {
     return {
       slide: 1,
+      seamless: false,
       stars: 3,
       modelSize: null,
       modelColor: null,

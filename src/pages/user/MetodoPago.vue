@@ -47,7 +47,7 @@
         outlined
         v-model="creditCard"
         class="credit-card"
-        mask="####-####-####-####"
+        mask="#### #### #### ####"
         :rules="[
           (val) => !!val || 'Este campo es requerido',
           (val) => val.length == 19 || 'Ingrese un numero de tarjeta valido',
@@ -57,7 +57,7 @@
         <p class="title-input text-grey-6">Numero de tarjeta:</p>
 
         <template v-slot:prepend>
-          <q-icon name="email" class="cc-pri"/>
+          <q-icon name="credit_card" class="cc-pri"/>
         </template>
       </q-input>
 

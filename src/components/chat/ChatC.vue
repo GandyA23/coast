@@ -1,11 +1,10 @@
 <template>
     <div class="q-pa-md q-gutter-sm">
-        <q-btn label="Click Me" color="primary" @click="seamless = true" />
-        <q-dialog v-model="seamless" seamless position="bottom">
+        <q-dialog v-model="$props.seamless" seamless position="bottom">
             <q-card style="width: 350px">
                 <q-toolbar class="text-white shadow-2 bg-cc-sec " side>
                     <q-toolbar-title class="col-md-10 col-xs-10 cf-body">Chat</q-toolbar-title>
-                    <q-btn flat round icon="close" v-close-popup class="q-ml-md" />
+                    <q-btn flat round icon="close" @click="$props.seamless=false" class="q-ml-md" />
                 </q-toolbar>
                 <q-card-section class="items-center no-wrap">
                     <div>
@@ -60,9 +59,10 @@
 
 <script>
 export default {
-    data() {
-        return {
-            seamless: false
+    props:{
+        seamless:{
+            type:Boolean,
+            default: false
         }
     }
 }

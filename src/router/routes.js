@@ -19,7 +19,6 @@ const routes = [
       { path: 'inbox-email', component: () => import('pages/user/InboxEmail.vue') },
       { path: 'planes', component: () => import('pages/user/Pricing.vue') },
       { path: 'carrito', component: () => import('pages/user/ShoppingCart.vue') },
-      { path: 'chat', component: () => import('components/chat/ChatC.vue') },
       { path: 'perfil', component: () => import('pages/user/UserProfile.vue') },
       { path: 'detalles', component: () => import('pages/user/Detalles.vue') },
       { path: 'metodo-de-pago', component: () => import('pages/user/MetodoPago.vue') },

@@ -7,7 +7,7 @@
           </div>
         </q-img>
       </div>
-      <div class="row justify-center">
+      <div class="row justify-between">
         <q-list v-for="(item, index) in items" :key="index">
           <q-card class="my-card q-ma-md" style="max-width: 300px; height: 300px">
             <q-img v-bind:src="item.img">

@@ -122,12 +122,12 @@
       </q-input>
 
       <div class="btn-register-user">
-        <q-btn rounded color="cc-pri" text-color="white" label="Registrarse" />
+        <q-btn rounded to="/" color="cc-pri" text-color="white" label="Registrarse" />
       </div>
 
       <div class="login cc-pri cf-body">
         <div class="text-subtitle2">¿Ya tienes cuenta?</div>
-        <q-item class="text-subtitle2 sesion" manual-focus dense to="#"
+        <q-item class="text-subtitle2 sesion" manual-focus dense to="/"
           >Iniciar sesión</q-item
         >
       </div>

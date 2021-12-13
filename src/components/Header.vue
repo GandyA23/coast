@@ -12,7 +12,7 @@
         <div v-if="showIconsLogged">
           <q-btn class="bg-cc-sec q-mr-sm" size="12px" outline round color="white" icon="o_person" />
           <q-btn class="bg-cc-sec q-mr-sm" size="12px" outline round color="white" icon="o_shopping_cart" />
-          <q-btn class="bg-cc-sec q-mr-lg" size="12px" outline round color="white" icon="o_power_settings_new" />
+          <q-btn class="bg-cc-sec q-mr-lg" @click="closeSession" size="12px" outline round color="white" icon="o_power_settings_new" />
         </div>
       </q-toolbar>
     </q-header>
@@ -58,7 +58,7 @@
           <q-badge class="q-mr-sm" align="top" color="red" :label="notifications.length" />
 
           <!--Cerrar sesión-->
-          <q-btn class="bg-cc-sec q-mr-lg" size="12.5px" outline round color="white" icon="o_power_settings_new" />
+          <q-btn class="bg-cc-sec q-mr-lg" @click="closeSession" size="12.5px" outline round color="white" icon="o_power_settings_new" />
         </div>
       </q-toolbar>
     </q-header>
@@ -98,7 +98,16 @@ export default {
   methods: {
     openOrCloseDrawer () {
       this.$emit('openOrCloseDrawer')
+    },
+    closeSession () {
+      this.$q.notify({
+        message: 'Se ha cerrado sesión.',
+        icon: 'check_circle',
+        type: 'positive'
+      })
+      this.$router.push('/')
     }
+
   }
 }
 </script>

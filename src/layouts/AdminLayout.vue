@@ -3,124 +3,81 @@
 
     <Header
       @openOrCloseDrawer="openOrCloseDrawer"
+      :isAdmin="true"
       :isLogged="true"
     />
 
     <Drawer
       :leftDrawerOpen="drawerOpen"
       :links="essentialLinks"
+      :isAdmin="true"
     />
 
     <q-page-container>
       <router-view />
     </q-page-container>
 
-    <Footer />
+    <Footer :isAdmin="true" />
   </q-layout>
 </template>
 
 <script>
-
 import Header from 'components/Header.vue'
 import Footer from 'components/Footer.vue'
 import Drawer from 'components/Drawer.vue'
-
 const linksData = [
   {
-    title: 'Inicio',
+    title: 'Form',
     icon: {
-      name: 'o_home',
-      classes: 'cc-pri'
+      name: 'check_box',
+      classes: 'text-white'
     },
     link: '',
-    classes: 'cc-pri cf-body text-weight-bolder'
+    classes: 'text-white cf-body text-weight-bolder'
   },
   {
-    title: 'Planes',
+    title: 'Stepper',
     icon: {
-      name: 'star_outline',
-      classes: 'cc-pri'
-    },
-    link: '/planes',
-    classes: 'cc-pri cf-body text-weight-bolder'
-  },
-  {
-    title: 'Caballeros',
-    icon: {
-      name: 'male',
-      classes: 'cc-pri'
+      name: 'table_chart',
+      classes: 'text-white'
     },
     link: '',
-    expandIconClass: 'cc-pri',
-    classes: 'cc-pri cf-body text-weight-bolder',
+    classes: 'text-white cf-body text-weight-bolder'
+  },
+  {
+    title: 'Charts',
+    icon: {
+      name: 'pie_chart',
+      classes: 'text-white'
+    },
+    link: '',
+    classes: 'text-white cf-body text-weight-bolder'
+  },
+  {
+    title: 'Gestión',
+    icon: {
+      name: 'app_registration',
+      classes: 'text-white'
+    },
+    link: '',
+    classes: 'text-white cf-body text-weight-bolder',
+    expandIconClass: 'text-white',
     sublevel: [
       {
-        title: 'Pantalones / Short',
-        link: '/caballeros/pantalones-shorts',
-        classes: 'cc-pri cf-body text-body2'
+        title: 'Lista de productos',
+        link: '',
+        classes: 'text-white cf-body text-body2'
       },
       {
-        title: 'Camisas',
-        link: '/caballeros/camisas',
-        classes: 'cc-pri cf-body text-body2'
-      },
-      {
-        title: 'Sudaderas / Hoddies',
-        link: '/caballeros/sudaderas-hoodies',
-        classes: 'cc-pri cf-body text-body2'
-      },
-      {
-        title: 'Accesorios',
-        link: '/caballeros/accesorios',
-        classes: 'cc-pri cf-body text-body2'
+        title: 'Registro',
+        link: '',
+        classes: 'text-white cf-body text-body2'
       }
     ]
-  },
-  {
-    title: 'Damas',
-    icon: {
-      name: 'female',
-      classes: 'cc-pri'
-    },
-    link: '',
-    expandIconClass: 'cc-pri',
-    classes: 'cc-pri cf-body text-weight-bolder',
-    sublevel: [
-      {
-        title: 'Pantalones / Short',
-        link: '/caballeros/pantalones-shorts',
-        classes: 'cc-pri cf-body text-body2'
-      },
-      {
-        title: 'Camisas',
-        link: '/caballeros/camisas',
-        classes: 'cc-pri cf-body text-body2'
-      },
-      {
-        title: 'Sudaderas / Hoddies',
-        link: '/caballeros/sudaderas-hoodies',
-        classes: 'cc-pri cf-body text-body2'
-      },
-      {
-        title: 'Accesorios',
-        link: '/caballeros/accesorios',
-        classes: 'cc-pri cf-body text-body2'
-      }
-    ]
-  },
-  {
-    title: 'Inbox Email',
-    icon: {
-      name: 'o_mail',
-      classes: 'cc-pri'
-    },
-    link: '',
-    classes: 'cc-pri cf-body text-weight-bolder'
   }
 ];
-
 export default {
-  name: 'UserLayout',
+  name: 'MainLayout',
   components: { Header, Footer, Drawer },
   data () {
     return {

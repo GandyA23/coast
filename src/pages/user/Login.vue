@@ -50,6 +50,7 @@
       <div class="row justify-around mt-2 input-login">
         <q-btn
           rounded
+          @click="adminOrUser"
           color="white"
           text-color="#0C2D48"
           label="Entrar"
@@ -66,6 +67,13 @@
           to="#"
           >¿Olvidaste tu contraseña?</q-item
         >
+        <q-item
+          class="text-subtitle2 text-white sesion"
+          manual-focus
+          dense
+          to="/registro"
+          >Registrarse</q-item
+        >
       </div>
     </div>
   </div>
@@ -79,9 +87,42 @@ export default {
       email: "",
       password: "",
       right: false,
-      pass1: false,
+      pass1: true,
     };
   },
+  methods: {
+    /**
+     * Método de redirección para saber a que esqueleto gusta ir (Admin o Usuario)
+     */
+    adminOrUser () {
+      switch (this.email) {
+        case "admin@admin.com":
+          this.$q.notify({
+            message: 'Inicio de sesión correcto.',
+            icon: 'check_circle',
+            type: 'positive'
+          })
+          this.$router.push('/admin/chart')
+          break
+
+        case "user@user.com":
+          this.$q.notify({
+            message: 'Inicio de sesión correcto.',
+            icon: 'check_circle',
+            type: 'positive'
+          })
+          this.$router.push('/landing')
+          break
+
+        default:
+          this.$q.notify({
+            message: 'Email y/o contraseña incorrectos, vuelva a intentarlo.',
+            icon: 'error',
+            type: 'negative'
+          })
+      }
+    }
+  }
 };
 </script>
 

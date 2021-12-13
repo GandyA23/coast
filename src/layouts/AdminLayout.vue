@@ -32,7 +32,7 @@ const linksData = [
       name: 'check_box',
       classes: 'text-white'
     },
-    link: '',
+    link: '/admin/formulario',
     classes: 'text-white cf-body text-weight-bolder'
   },
   {
@@ -41,7 +41,7 @@ const linksData = [
       name: 'table_chart',
       classes: 'text-white'
     },
-    link: '',
+    link: '/admin/stepper',
     classes: 'text-white cf-body text-weight-bolder'
   },
   {
@@ -50,7 +50,7 @@ const linksData = [
       name: 'pie_chart',
       classes: 'text-white'
     },
-    link: '',
+    link: '/admin/chart',
     classes: 'text-white cf-body text-weight-bolder'
   },
   {
@@ -65,12 +65,12 @@ const linksData = [
     sublevel: [
       {
         title: 'Lista de productos',
-        link: '',
+        link: '/admin/lista-productos',
         classes: 'text-white cf-body text-body2'
       },
       {
         title: 'Registro',
-        link: '',
+        link: '/admin/registro-productos',
         classes: 'text-white cf-body text-body2'
       }
     ]

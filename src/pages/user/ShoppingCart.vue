@@ -70,7 +70,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-10 text-weight-bold">Total</div>
                         <div class="col-xs-12 col-sm-6 col-md-2 text-weight-bold">$557.00</div>
                     </div>
-                    <q-btn rounded color="cc-pri" text-color="white" label="Continuar con la compra" class="full-width" />
+                    <q-btn rounded color="cc-pri" text-color="white" label="Continuar con la compra" class="full-width"  to="/metodo-de-pago"/>
                     <div class="q-pt-lg text-body1 text-weight-bold">
                         Aceptamos
                     </div>

@@ -121,6 +121,7 @@
         class="full-width btn-register"
         label="Guardar tarjeta"
         color="cc-pri"
+        @click="continuar()"
       />
     </div>
     <div class="q-pa-sm col-sm-4 img">
@@ -174,6 +175,14 @@ export default {
         return "Ingrese una fecha valida";
       }
     },
+    continuar() {
+      this.$q.notify({
+        message: "Tarjeta guardada correctamente.",
+        icon: "check_circle",
+        type: "positive"
+      });
+      this.$router.push('/checkout')
+    }
   },
 };
 </script>

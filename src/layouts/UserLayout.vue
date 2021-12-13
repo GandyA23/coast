@@ -32,7 +32,7 @@ const linksData = [
       name: 'o_home',
       classes: 'cc-pri'
     },
-    link: '',
+    link: '/landing',
     classes: 'cc-pri cf-body text-weight-bolder'
   },
   {
@@ -114,7 +114,7 @@ const linksData = [
       name: 'o_mail',
       classes: 'cc-pri'
     },
-    link: '',
+    link: '/inbox-email',
     classes: 'cc-pri cf-body text-weight-bolder'
   }
 ];

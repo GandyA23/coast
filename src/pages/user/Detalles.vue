@@ -174,10 +174,18 @@ export default {
       this.$refs.size.validate();
       this.$refs.color.validate();
 
-      if(this.$refs.size.hasError || this.$refs.color.hasError){
-        //mensaje de error
-      }else{
-        //mensaje éxito
+      if (this.$refs.size.hasError || this.$refs.color.hasError) {
+        this.$q.notify({
+          message: "Por favor, escoge una talla y color.",
+          icon: "error",
+          type: "negative"
+        });
+      } else {
+        this.$q.notify({
+          message: "Agregado al carrito correctamente.",
+          icon: "check_circle",
+          type: "positive"
+        });
       }
     }
   }

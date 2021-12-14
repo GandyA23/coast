@@ -10,7 +10,7 @@
       </div>
 
       <div class="col-12">
-        <q-btn outline rounded size="sm" class="bg-cc-pri" color="white">
+        <q-btn to="/" outline rounded size="sm" class="bg-cc-pri" color="white">
           <q-icon left size="2rem" name="arrow_back" />
           <p style="font-size: 1.3rem" class="q-mt-md cf-body">
             Regresar

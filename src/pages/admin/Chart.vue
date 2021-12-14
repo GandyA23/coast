@@ -135,9 +135,14 @@ export default {
             labels: ['Value1', 'Value2', 'Value3', 'Value4'],
             datasets: [
               {
-                label: 'Values',
+                label: 'Values1',
                 backgroundColor: ['#0D2535', '#5388D8', '#B1D4E0', '#2E8BC0'],
                 data: [2478, 5267, 734, 784]
+              },
+              {
+                label: 'Values2',
+                backgroundColor: ['#0D2537', '#5388D7', '#B1D4E7', '#2E8BC7'],
+                data: [1478, 3267, 1734, 1784]
               }
             ]
           },

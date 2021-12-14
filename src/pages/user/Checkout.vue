@@ -171,7 +171,7 @@
               </div>
 
               <div class="row">
-                <q-btn rounded color="cc-pri" text-color="white" label="Completar compra" class="q-mt-lg q-mb-lg full-width" />
+                <q-btn @click="showNoti" rounded color="cc-pri" text-color="white" label="Completar compra" class="q-mt-lg q-mb-lg full-width" />
               </div>
             </div>
             <div class="offset-md-1 col-xs-12 col-sm-6 col-md-5">
@@ -237,15 +237,15 @@ export default {
     name: "Checkout",
     data() {
         return {
-          target: '',
-          date: '',
-          cvv: '',
+          target: '1111 1111 1111 1111',
+          date: '2021/02/01',
+          cvv: '111',
           direction: '',
           zip: '',
           state: '',
           city: '',
           coupon: '',
-          total: '',
+          total: '84500',
           cantidad: 1,
           products: [{
               name: "Sweater blanco básico",
@@ -265,6 +265,15 @@ export default {
               image: "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80"
           }]
         }
+    },
+    methods: {
+      showNoti () {
+        this.$q.notify({
+          message: '¡Compra exitosa!',
+          icon: 'check_circle',
+          type: 'positive'
+        })
+      }
     }
 };
 </script>
